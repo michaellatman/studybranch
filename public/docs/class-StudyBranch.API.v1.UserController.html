@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class StudyBranch\API\v1\UserController</title>
+
+	<script type="text/javascript" src="resources/combined.js?2450294623"></script>
+	<script type="text/javascript" src="elementlist.js?3807552121"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li class="active"><a href="namespace-StudyBranch.html">StudyBranch<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-StudyBranch.API.html">API<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-StudyBranch.API.v1.html">v1</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-StudyBranch.API.v1.Activation.html">Activation</a></li>
+				<li><a href="class-StudyBranch.API.v1.Auth.html">Auth</a></li>
+				<li><a href="class-StudyBranch.API.v1.Credential.html">Credential</a></li>
+				<li><a href="class-StudyBranch.API.v1.Phone.html">Phone</a></li>
+				<li><a href="class-StudyBranch.API.v1.TestController.html">TestController</a></li>
+				<li><a href="class-StudyBranch.API.v1.Token.html">Token</a></li>
+				<li><a href="class-StudyBranch.API.v1.TokenController.html">TokenController</a></li>
+				<li><a href="class-StudyBranch.API.v1.User.html">User</a></li>
+				<li class="active"><a href="class-StudyBranch.API.v1.UserController.html">UserController</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-StudyBranch.API.v1.html" title="Summary of StudyBranch\API\v1"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class UserController</h1>
+
+
+	<div class="description">
+	
+<p>Class UserController</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>StudyBranch\API\v1\UserController</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-StudyBranch.html">StudyBranch</a>\<a href="namespace-StudyBranch.API.html">API</a>\<a href="namespace-StudyBranch.API.v1.html">v1</a><br />
+		<b>Package:</b> Controllers\User<br />
+
+		<b>Located at</b> <a href="source-class-StudyBranch.API.v1.UserController.html#5-174" title="Go to source code">controllers/api/v1/UserController.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="get_resend_activation" id="_get_resend_activation">
+
+		<td class="attributes"><code>
+			 public 
+			Illuminate\Http\JsonResponse
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_resend_activation">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#12-25" title="Go to source code">get_resend_activation</a>( <span>mixed <var>$email</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Allows users to request an activation email be sent to them. In case they
+lost the first one..</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Allows users to request an activation email be sent to them. In case they
+lost the first one..</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$email</var></dt>
+					<dd><code>mixed</code><br>$email string The plaintext email of any user.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Illuminate\Http\JsonResponse</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send_activation_email" id="_send_activation_email">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send_activation_email">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#26-38" title="Go to source code">send_activation_email</a>( <span><code><a href="class-StudyBranch.API.v1.User.html">StudyBranch\API\v1\User</a></code> <var>$user</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Function sends an activation email</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Function sends an activation email</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd><code><code><a href="class-StudyBranch.API.v1.User.html">StudyBranch\API\v1\User</a></code></code><br>$user The user object to send the email too.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_register" id="_post_register">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-StudyBranch.API.v1.User.html">StudyBranch\API\v1\User</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_post_register">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#41-80" title="Go to source code">post_register</a>( )</code>
+
+		<div class="description short">
+			
+<p>Handles registration with validation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handles registration with validation.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-StudyBranch.API.v1.User.html">StudyBranch\API\v1\User</a></code></code><br>profile or errors<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_account_info" id="_get_account_info">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_account_info">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#84-90" title="Go to source code">get_account_info</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br>user profile<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_change_password" id="_post_change_password">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_post_change_password">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#93-129" title="Go to source code">post_change_password</a>( )</code>
+
+		<div class="description short">
+			
+<p>Handles changing a user's password.. POST account/change_password</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handles changing a user's password.. POST account/change_password</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br>user profile<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_phone" id="_post_phone">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_post_phone">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#131-140" title="Go to source code">post_phone</a>( )</code>
+
+		<div class="description short">
+			
+<p>Change phone number</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Change phone number</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br>User profile.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="post_change_bio" id="_post_change_bio">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_post_change_bio">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#142-152" title="Go to source code">post_change_bio</a>( )</code>
+
+		<div class="description short">
+			
+<p>Change bio</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Change bio</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br>User profile.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_account_phone" id="_get_account_phone">
+
+		<td class="attributes"><code>
+			 public 
+			Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_account_phone">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#154-162" title="Go to source code">get_account_phone</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get phone number in JSON</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get phone number in JSON</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Response</code><br>phone as JSON<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="activate" id="_activate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_activate">#</a>
+		<code><a href="source-class-StudyBranch.API.v1.UserController.html#164-173" title="Go to source code">activate</a>( <span>mixed <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

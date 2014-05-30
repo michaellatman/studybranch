@@ -1,0 +1,40 @@
+{
+  "name": "emberfire",
+  "version": "1.0.9",
+  "description": "Firebase bindings for Ember Data",
+  "main": [
+    "./dist/emberfire.js"
+  ],
+  "dependencies": {
+    "ember": ">=1.4.0 < 2.0.0",
+    "ember-data": "~1.0.0-beta.7",
+    "firebase": "~1.0.11"
+  },
+  "keywords": [
+    "Firebase",
+    "real-time",
+    "websocket"
+  ],
+  "ignore": [
+    ".jshintrc",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "examples/",
+    "node_modules",
+    "src/",
+    "test/",
+    "tasks/",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/firebase/emberFire",
+  "_release": "1.0.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.9",
+    "commit": "91e880c3a377b0e8b631721742d7619f4c445da0"
+  },
+  "_source": "git://github.com/firebase/emberFire.git",
+  "_target": "*",
+  "_originalSource": "emberfire"
+}

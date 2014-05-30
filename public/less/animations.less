@@ -1,0 +1,24 @@
+@import "lesshat.less";
+.animateIn{
+  .animation-name(fadeIn);
+  .animation-duration(1s);
+  .animation-iteration-count(1);
+  .animation-timing-function(ease-in-out);
+  .animation-fill-mode(fowards);
+}
+.navbar.animateIn{
+  .animateIn;
+  .animation-name(floatDown);
+}
+.custombox.animateIn{
+  .animateIn;
+  .animation-name(floatUp);
+  .animation-duration(.3s);
+}
+
+.keyframes(~'floatDown, from{ transform: translate(0,-100px); } to{ opactiy:1; }');
+.keyframes(~'floatUp, from{ transform: translate(0,30%); opacity:0; } to{ opactiy:1; }');
+.keyframes(~'fadeIn, from{ opacity:0; } to{ opactiy:1; }');
+.willAnimateIn{
+  opacity: 0;
+}

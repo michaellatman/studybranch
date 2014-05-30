@@ -1,0 +1,126 @@
+<br>
+<div class='row'>
+    <div id="assignment-sidebar" class="col-md-3">
+        <ul class="nav nav-stacked nav-pills">
+            {{#each item in model}}
+                <li>{{#link-to "assignments.assignment" item}}{{item.title}}{{/link-to}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="col-md-9">
+        {{outlet}}
+        <div>
+            <button data-toggle="collapse" data-target="#assignment-sidebar"
+                    class="btn btn-inverse" {{!--onclick="document.getElementById("assignment-list").className = "col-md-12";"--}}>
+                <span class="glyphicon glyphicon-fullscreen"></span>
+            </button>{{!--this is not currently making the assignments bigger. I can't get it to change the class to col-md-12--}}
+            <button class="btn btn-inverse pull-right"><span class='fui-plus'></span></button>
+        </div>
+        <br>
+
+        <div>
+            <div class="assignmentbox col-md-9" id="add-assignment">
+                <form role="form">
+                    <input type="text" class="form-control input-transparent" placeholder="Read chapter..."/>
+
+                    <div class='right'></div>
+                    <br>
+                    <textarea class="form-control input-transparent" rows="3"
+                              placeholder="Description..."></textarea><br>
+
+                </form>
+                <div class="row">
+                    <p><span class="glyphicon glyphicon-time"></span>
+                        <select class="input-pad-left input-transparent input-dark">
+                            <option value="volvo">Today</option>
+                            <option value="saab">Tomorrow</option>
+                            <option value="mercedes">Custom</option>
+                        </select>
+                    </p>
+                </div>
+
+                <br><br>
+                <button class="btn btn-inverse"><span class="glyphicon glyphicon-upload"></span></button>
+                <button class="btn btn-inverse pull-right">Submit</button>
+            </div>
+            <br>
+        </div>
+        <div>
+            <div class="assignmentbox col-md-9" id="add-assignment">
+                <form role="form">
+                    <input type="text" class="form-control" placeholder="Assignment Title"/><br>
+                    <textarea class="form-control" rows="3" placeholder="Assignment Body"></textarea><br>
+
+                    <div class="row">
+                        <div class="col-sm-2">Section</div>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-inverse">
+                                <span class="fui-plus pull-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <form role="form" class="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="outDate">Out Date</label>
+
+                        <div class="col-sm-4"><input type="date" class="form-control" id="outDate"
+                                                     placeholder="Out Date"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="dueDate">Duedate</label>
+
+                        <div class="col-sm-4"><input type="date" class="form-control" id="dueDate"
+                                                     placeholder="Out Date"></div>
+                    </div>
+                </form>
+                <br><br>
+                <button class="btn btn-inverse"><span class="glyphicon glyphicon-upload"></span></button>
+                <button class="btn btn-inverse pull-right">Submit</button>
+            </div>
+            <br>
+        </div>
+        <div id="assignment-list" class="custombox col-md-9">
+            <h4>
+                <div class="btn-group-vertical pull-right corner-fit">
+                    <button class="btn btn-inverse" data-toggle="tooltip" data-placement="left"
+                            title="Mark as Completed"><span class="fui-check-inverted"></span></button>
+                    <button class="btn btn-inverse"><span class="fui-mail"></span></button>
+                    <button class="btn btn-inverse"><span class="glyphicon glyphicon-pencil"></span></button>
+                    <button class="btn btn-inverse"><span class="glyphicon glyphicon-paperclip"></span></button>
+                </div>
+                Assignment Title Super long thing to mess with the UI
+            </h4>
+            <span class='tinsie sb-resource'>Due 5/27/14</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, debitis, ut, earum quas blanditiis
+                doloremque distinctio autem quae ipsa sint molestias nostrum obcaecati enim vero in. Minima, deserunt,
+                nemo dolores repudiandae possimus eveniet quae laudantium eos exercitationem sed dolor sapiente
+                perferendis suscipit labore voluptatum dignissimos explicabo tempore voluptates ratione cupiditate
+                quisquam enim officiis ea aperiam vitae magni ipsa in ipsam minus neque beatae quod fugit rem quam sit
+                quis vero mollitia fugiat iusto facere repellat accusantium. Vel, delectus quibusdam expedita maxime
+                tempore ipsam sapiente laudantium alias recusandae deserunt eveniet labore inventore adipisci voluptas
+                molestiae repudiandae asperiores iste veritatis aspernatur dolorem?</p>
+
+            <div><p><a class="sb-resource" href="#"><span class="glyphicon glyphicon-link"></span>&nbsp;links go
+                here</a></p>
+
+                <p><a class="sb-resource" href="#"><span class="glyphicon glyphicon-link"></span>&nbsp;resources also go
+                    here</a></p></div>
+            <p>
+                <button class="btn btn-primary btn-inverse">submit</button>
+                <span class=""><a class="sb-resource" href="#">&nbsp;submitted documents appear here</a></span>
+            </p>
+        </div>
+    </div>
+</div>

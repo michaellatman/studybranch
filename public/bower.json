@@ -1,0 +1,11 @@
+{
+    "name": "StudyBranch",
+    "version": "1.0.0",
+    "dependencies": {
+        "ember":"*",
+        "bootstrap":"3.*",
+        "emberfire":"*",
+        "less.js":"*",
+        "momentjs":"*"
+    }
+}

@@ -1,0 +1,51 @@
+{{!The index page}}
+<div class="title willAnimateIn">
+    <h2>Dashboard</h2>
+    <small>last updated {{fromNow valueBinding="loaded"}}</small>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <h2 class='lead willAnimateIn'>announcements
+            <button class="btn pull-right btn-inverse btn-embossed"><span class='fui-plus'></span></button>
+        </h2>
+        {{#each item in model.news}}
+            <a data-toggle="collapse" {{bind-attr data-target="#item.id"}}>
+                <div class='custombox willAnimateIn'>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6>{{item.title}}<span
+                                    class='pull-right tinsie'>{{fromNow valueBinding="item.updatedAt" }}</span></h6>
+                        </div>
+                        <!--<button type="button" class="btn" data-toggle="collapse" data-target="#demo">collapse</button>-->
+                    </div>
+                    <div {{bind-attr id="item.id"}} class="row collapse in">
+                        <div class="col-xs-12">
+                            <p>{{item.body}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12"><span class="small">{{item.user.name}}</span><span
+                                class="muted small">{{item.organization.name}}</span></div>
+                    </div>
+                </div>
+            </a>
+        {{/each}}
+
+
+    </div>
+    <div class="col-md-6 col-xs-12">
+
+        <h2 class='lead willAnimateIn'>assignments
+            <button class="btn pull-right btn-inverse btn-embossed"><span class='fui-plus'></span></button>
+        </h2>
+        {{#each item in model.assignments}}
+            <div class='custombox willAnimateIn'>
+                <h6>{{item.title}} <span class='pull-right tinsie'>Due {{fromNow valueBinding="item.dueDate"}}</span>
+                </h6>
+
+                <p>{{item.body}}</p>
+            </div>
+        {{/each}}
+    </div>
+</div>
